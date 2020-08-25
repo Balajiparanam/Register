@@ -22,7 +22,7 @@ def database():
       cursor.execute('CREATE TABLE IF NOT EXISTS Student (name1 VARCHAR(255),email VARCHAR(255),gender VARCHAR(255),country VARCHAR(255),phone VARCHAR(255))')
       cursor.execute('INSERT INTO Student (name1,email,gender,country,phone) VALUES(%s,%s,%s,%s,%s)',(name1,email,gender,country,phone))
       con.commit()
-   message.showinfo('Status', 'Sussefully Registered')
+      message.showinfo('Status', 'Sussefully Registered')
    fullname_entry.delete(0,END)
    email_entry.delete(0,END)
    idea_entry.delete(0,END)
