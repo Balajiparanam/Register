@@ -26,6 +26,7 @@ def database():
    fullname_entry.delete(0,END)
    email_entry.delete(0,END)
    idea_entry.delete(0,END)
+   st.set(li[0])
    
 
 
@@ -73,7 +74,7 @@ country.place(x=35,y=280)
 
 st=StringVar()
 droplist=ttk.Combobox(frame1,width= 15,textvariable = st)
-li = ['India', 'USA','UK','Germany','Australia','South Africa', 'China']
+li = ['Select','India', 'USA','UK','Germany','Australia','South Africa', 'China']
 droplist['values'] = li
 st.set(li[0])
 droplist.place(x=240,y=280)
